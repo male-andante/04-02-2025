@@ -55,7 +55,23 @@ alert(contained(n1,n2))*/
 
 let city = prompt('inserisci nome città americana')
 
-const checkCityPrex = function (city) {
+/*const checkCityPrex = function (city) {
+
+    let newPrex = city.toLowerCase().startsWith("new", 0)
+    let losPrex = city.toLowerCase().startsWith("los", 0)
+
+    if (newPrex == true || losPrex == true) {
+        
+        return true
+
+    } else {
+        return false
+    }
+}
+
+console.log(checkCityPrex(city))*/
+
+const checkCityPrex = (city) => {
 
     let newPrex = city.toLowerCase().startsWith("new", 0)
     let losPrex = city.toLowerCase().startsWith("los", 0)
@@ -70,3 +86,6 @@ const checkCityPrex = function (city) {
 }
 
 console.log(checkCityPrex(city))
+
+// 5 - funzione che accetta un array come parametro e ne ritorna la somma
+
