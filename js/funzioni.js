@@ -1,4 +1,4 @@
-// 1 funzione che controlla SE tra 2 numeri interi, 1 dei 2 = 50 || n1 +n2 = 50 e return True se è vero.
+// 1 - funzione che controlla SE tra 2 numeri interi, 1 dei 2 = 50 || n1 +n2 = 50 e return True se è vero.
 
 /*let n1 = parseInt(prompt('scrivi un numero'))
 let n2 = parseInt(prompt('scrivi un altro numero'))
@@ -16,7 +16,7 @@ if ((n1 === 50 || n2 === 50) || (n1+n2 === 50)){
 
 console.log(checkInt(n1, n2))*/
 
-// 2 funzione che accetta una stringa e la posizione del carattere e rimuova il carattere dalla stringa. Ritorna la stringa modificata.
+// 2 - funzione che accetta una stringa e la posizione del carattere e rimuova il carattere dalla stringa. Ritorna la stringa modificata.
 
 /*let string = prompt('scrivi una parola')
 let pos = parseInt(prompt('scegli un indice da rimuovere'))
@@ -36,9 +36,9 @@ const modifyString = function (string, pos) {
 
 console.log(modifyString(string, pos))*/
 
-// 3 funzione che che controlla 2 numeri: 40<= n1&n2 <= 60 || 70<= n1&n2 <= 100.
+// 3 - funzione che che controlla 2 numeri: 40<= n1&n2 <= 60 || 70<= n1&n2 <= 100.
 
-let n1 = parseInt(prompt('scegli un numero'))
+/*let n1 = parseInt(prompt('scegli un numero'))
 let n2 = parseInt(prompt('scegli un altro numero'))
 
 const contained = function (n1,n2) {
@@ -49,5 +49,24 @@ const contained = function (n1,n2) {
     }
 }
 
-alert(contained(n1,n2))
+alert(contained(n1,n2))*/
 
+// 4 - funzione che accetta il nome di una città come parametro. se inizia per New || Los ritorna True
+
+let city = prompt('inserisci nome città americana')
+
+const checkCityPrex = function (city) {
+
+    let newPrex = city.toLowerCase().startsWith("new", 0)
+    let losPrex = city.toLowerCase().startsWith("los", 0)
+
+    if (newPrex == true || losPrex == true) {
+        
+        return true
+
+    } else {
+        return false
+    }
+}
+
+console.log(checkCityPrex(city))
