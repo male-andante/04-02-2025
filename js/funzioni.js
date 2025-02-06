@@ -71,7 +71,7 @@ let city = prompt('inserisci nome città americana')
 
 console.log(checkCityPrex(city))*/
 
-const checkCityPrex = (city) => {
+/*const checkCityPrex = (city) => {
 
     let newPrex = city.toLowerCase().startsWith("new", 0)
     let losPrex = city.toLowerCase().startsWith("los", 0)
@@ -85,7 +85,21 @@ const checkCityPrex = (city) => {
     }
 }
 
-console.log(checkCityPrex(city))
+console.log(checkCityPrex(city))*/
 
 // 5 - funzione che accetta un array come parametro e ne ritorna la somma
+
+let arr = [Math.random(), Math.random(), Math.random(), Math.random()]
+
+const sumArray = (total, num) =>{
+    return total + Math.round(num);
+}
+
+let sum = arr.reduce(sumArray, 0);
+console.log (arr)
+console.log(sum)
+
+//oppure si poteva usare for partendo da zero e sommando + 1 fino alla lunghezza dell'array
+
+// 6 - 
 
